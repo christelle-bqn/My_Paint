@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Paint</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://kit.fontawesome.com/84faafdf88.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <p class="title">My Paint</p>
+        <div class="container">
+            <div id="toolbar-file" class="controls-wrapper-file">
+                <div id="toolbar-save_open">
+                    <button id="png-save" class='button-file'>Save PNG img</button>
+                    <button id="jpeg-save" class='button-file'>Save JPEG img</button>
+                    <input type='file' name='img' size='65' id='uploadimage' />
+                </div>
+                <div id="toolbar-colors">
+                    <label for="color-rgb" class="label">RGB :</label>
+                    <input id="color-rgb" type="text" name="color" placeholder="rgb(255 210 114)"/>
+                    <button id="button-rgb">Set RGB Color</button>
+                    <label for="color-hsl" class="label">HSL :</label>
+                    <input id="color-hsl" type="text" name="color" placeholder="hsl(41 100% 72%)"/>
+                    <button id="button-hsl">Set HSL Color</button>
+                    <button id="reset-color">Reset color</button>
+                </div>
+            </div>
+            <div id="toolbar" class="controls-wrapper">
+                <div id="toolbar-tools">
+                    <div class="control_line-width">
+                        Color : <span id="current-color">Black</span>
+                        Line width : <span id="lineVal">1</span>
+                        <button id="decWidth" class="widthControl">-</button>
+                        <button id="incWidth" class="widthControl">+</button>
+                    </div>
+                    <button id='tool-line' class='button-tool'><img src="https://img.icons8.com/material-two-tone/24/000000/line.png" class="img-tool"/></i> Line</button>
+                    <button id='tool-pencil' class='button-tool'><img src="https://img.icons8.com/material/26/000000/pencil--v2.png" class="img-tool"/> Pencil</button>
+                    <button id='tool-eraser' class='button-tool'><img src="https://img.icons8.com/material-sharp/24/000000/erase.png" class="img-tool"/> Eraser</button>
+                    <button id='tool-rectangle' class='button-tool'><img src="https://img.icons8.com/android/24/000000/rectangle-stroked.png" class="img-tool"/> Rectangle</button>
+                    <button id='tool-filled_rectangle' class='button-tool'><img src="https://img.icons8.com/android/24/000000/rectangle.png" class="img-tool"/> Filled Rectangle</button>
+                    <button id='tool-circle' class='button-tool'><img src="https://img.icons8.com/material-rounded/24/000000/circled.png" class="img-tool"/> Circle</button>
+                    <button id='tool-filled_circle' class='button-tool'><img src="https://img.icons8.com/material/24/000000/filled-circle.png" class="img-tool"/> Filled Circle</button>
+                </div>
+                <div id="toolbar-color-picker">
+                    <button id="show-palette">Show Color Picker</button>
+                    <div id="color-picker" class="palette">
+                    </div>
+                </div>
+            </div>
+            <canvas id="canvas" width="1200" height="500"></canvas>
+        </div>
+        <script src="jquery-3.5.1.js"></script>
+        <script src="paint.js"></script>
+    </body>
+</html>

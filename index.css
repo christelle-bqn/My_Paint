@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(166, 196, 204);
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30px;
+}
+
+canvas {
+    margin: 2em auto;
+    max-width: 100%;
+    display: inline;
+}
+
+#canvas {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.controls-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 0.1em;
+}
+
+.controls-wrapper-file {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    font-size: 1.1em;
+    border: 1px solid black;
+    border-radius: 0.1em;
+}
+
+.control_line-width {
+    margin-right: 2em;
+}
+
+.button-tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    padding: 0em 1em;
+}
+
+.img-tool {
+    margin-bottom: 0.6em;
+}
+
+#toolbar-tools {
+    display: flex;
+    align-items: center;
+}
+
+.button-file {
+    border: 1px solid #000000;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    padding: 0.5em;
+    font-size: 0.7em;
+}
+
+.label {
+    font-size: 1em;
+}
+
+#color-rgb, #color-hsl {
+    width: 10em;
+}
+
+#button-rgb {
+    margin-right: 0.5em;
+}
+
+#current-color {
+    margin-right: 1em;
+}
+
+#hide-palette {
+    width: 120px;
+    height: 20px;
+}
+
+#color-picker {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    width: 400px;
+    height: auto;
+}
+
+.thumb {
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0.5em;
+}
